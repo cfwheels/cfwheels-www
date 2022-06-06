@@ -7,7 +7,7 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <title>CFWheels -  an open source CFML framework inspired by Ruby on Rails</title>
-          <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="keywords" content="cfwheels,cfml,ruby,framework">
       <meta name="description" content="">
       <meta property="og:title" content="ColdFusion on Wheels">
@@ -131,12 +131,10 @@
             <cfset postArray = deserializeJSON(result.filecontent).data[1]>
 
             <cfloop index="currentIndex" item="currentItem" array="#postArray#"> 
-                <cfoutput>
-                    <p>
-                        <a href="#currentItem.guid#" target="_blank">#currentItem.post_title#</a><br>
-                        Posted on #dateFormat(currentItem.post_date, "short")# at #timeFormat(currentItem.post_date, "short")#
-                    </p>
-                </cfoutput> 
+              <p>
+                <a href="#currentItem.guid#" target="_blank">#currentItem.post_title#</a><br>
+                Posted on #dateFormat(currentItem.post_date, "short")# at #timeFormat(currentItem.post_date, "short")#
+              </p>
             </cfloop>
             <h3>Sponsor This Project</h3>	
             <script src='https://opencollective.com/cfwheels/banner.js?style={"a":{"color":"red"},"h2":{"fontFamily":"Verdana","fontWeight":"normal","fontSize":"20px"}}'></script>
@@ -153,7 +151,7 @@
             <div class="col-sm-8">
               <div class="copyright">
                 <p>
-                  &copy; <cfoutput>#year(now())#</cfoutput> CFWheels. All rights reserved.<br />
+                  &copy; #year(now())# CFWheels. All rights reserved.<br />
                   CFWheels is licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.
                 </p>
                 <p class="hosting">
