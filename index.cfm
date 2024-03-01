@@ -137,7 +137,7 @@
               </p>
             </cfloop>
             <h3>Sponsor This Project</h3>	
-            <script src='https://opencollective.com/cfwheels/banner.js?style={"a":{"color":"red"},"h2":{"fontFamily":"Verdana","fontWeight":"normal","fontSize":"20px"}}'></script>
+            <script src='https://opencollective.com/wheels-fw/banner.js?style={"a":{"color":"red"},"h2":{"fontFamily":"Verdana","fontWeight":"normal","fontSize":"20px"}}'></script>
                 </div>		
         </div>
 
